@@ -1,0 +1,7 @@
+data/io.kcmr.baby-tracker.desktop.in
+data/io.kcmr.baby-tracker.appdata.xml.in
+data/io.kcmr.baby-tracker.gschema.xml
+src/baby-tracker-window.ui
+src/main.c
+src/baby-tracker-window.c
+
