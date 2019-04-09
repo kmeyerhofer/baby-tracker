@@ -18,6 +18,7 @@
 
 #include "baby-tracker-config.h"
 #include "baby-tracker-window.h"
+#include "baby-tracker-resources.h"
 #define HANDY_USE_UNSTABLE_API
 #include <handy.h>
 
