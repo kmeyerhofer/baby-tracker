@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <gresources>
-  <gresource prefix="/org/gnome/baby-tracker">
+  <gresource prefix="/io/kcmr/baby-tracker/ui">
     <file>baby-tracker-window.ui</file>
   </gresource>
 </gresources>

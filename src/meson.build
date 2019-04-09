@@ -31,6 +31,7 @@ gnome = import('gnome')
 
 baby_tracker_sources += gnome.compile_resources('baby-tracker-resources',
   'baby-tracker.gresource.xml',
+  source_dir: 'ui',
   c_name: 'baby_tracker'
 )
 

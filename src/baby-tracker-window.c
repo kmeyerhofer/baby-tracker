@@ -18,6 +18,8 @@
 
 #include "baby-tracker-config.h"
 #include "baby-tracker-window.h"
+#define HANDY_USE_UNSTABLE_API
+#include <handy.h>
 
 struct _BabyTrackerWindow
 {
@@ -35,7 +37,7 @@ baby_tracker_window_class_init (BabyTrackerWindowClass *klass)
 {
   GtkWidgetClass *widget_class = GTK_WIDGET_CLASS (klass);
 
-  gtk_widget_class_set_template_from_resource (widget_class, "/org/gnome/baby-tracker/baby-tracker-window.ui");
+  gtk_widget_class_set_template_from_resource (widget_class, "/io/kcmr/baby-tracker/ui/baby-tracker-window.ui");
   gtk_widget_class_bind_template_child (widget_class, BabyTrackerWindow, header_bar);
   gtk_widget_class_bind_template_child (widget_class, BabyTrackerWindow, label);
 }

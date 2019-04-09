@@ -21,8 +21,7 @@
 #include "baby-tracker-config.h"
 #include "baby-tracker-window.h"
 
-#define HANDY_USE_UNSTABLE_API
-#include <handy.h>
+
 
 /*
 GdkPixbuf *create_pixbuf(const gchar * filename)
@@ -42,7 +41,7 @@ static void
 on_activate (GtkApplication *app)
 {
 	GtkWindow *window;
-  GdkPixbuf *icon;
+  // GdkPixbuf *icon;
 
 	/* It's good practice to check your parameters at the beginning of the
 	 * function. It helps catch errors early and in development instead of
@@ -55,16 +54,16 @@ on_activate (GtkApplication *app)
 	if (window == NULL)
 		window = g_object_new (BABY_TRACKER_TYPE_WINDOW,
 		                       "application", app,
-		                       "default-width", 600,
-		                       "default-height", 300,
+		                       "default-width", 360,
+		                       "default-height", 654,
 		                       NULL);
 
-  //gtk_window_set_default_size(GTK_WINDOW(window), 230, 150);
-  //gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
-  //icon = create_pixbuf ("/org/gnome/baby-tracker/io.kcmr.baby-tracker.baby-crawling-silhouette.svg");
-  //gtk_window_set_icon(GTK_WINDOW(window), icon);
+  // gtk_window_set_default_size(GTK_WINDOW(window), 230, 150);
+  // gtk_window_set_position(GTK_WINDOW(window), GTK_WIN_POS_CENTER);
+  // icon = create_pixbuf ("/org/gnome/baby-tracker/io.kcmr.baby-tracker.baby-crawling-silhouette.svg");
+  // gtk_window_set_icon(GTK_WINDOW(window), icon);
 
-  //g_object_unref(icon);
+  // g_object_unref(icon);
 
 	/* Ask the window manager/compositor to present the window. */
 	gtk_window_present (window);
